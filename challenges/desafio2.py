@@ -9,3 +9,5 @@ def difference_pairs(array, difference):
 
 
 print(difference_pairs([1, 5, 3, 4, 2], 2))
+
+print(difference_pairs([4, 6, 1, 5, 9], 2))
