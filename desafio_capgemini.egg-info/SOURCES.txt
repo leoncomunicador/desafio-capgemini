@@ -1,0 +1,8 @@
+README.md
+setup.cfg
+setup.py
+desafio_capgemini.egg-info/PKG-INFO
+desafio_capgemini.egg-info/SOURCES.txt
+desafio_capgemini.egg-info/dependency_links.txt
+desafio_capgemini.egg-info/requires.txt
+desafio_capgemini.egg-info/top_level.txt
