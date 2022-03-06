@@ -15,6 +15,3 @@ def grid_string(str):
             for j in sub:
                 lst.append(j)
             print(' '.join(lst))
-
-
-grid_string('olá mundo')
