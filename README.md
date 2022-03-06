@@ -143,9 +143,9 @@ pip install more-itertools (necessário para garantir que vai rodar o teste 3)
 
 Para rodar os testes , você deve estar na pasta raiz, e executar os arquivos conforme os exemplos abaixo:
 **Teste desfio 1**
-user@user-Lenovo-ideapad-330-15IKB:~/desafio-capgemini$ `python3 -m pytest tests/desafio1_test.py`
+`user@user-Lenovo-ideapad-330-15IKB:~/desafio-capgemini$ python3 -m pytest tests/desafio1_test.py`
 **Teste desafio 2**
-user@user-Lenovo-ideapad-330-15IKB:~/desafio-capgemini$ `python3 -m pytest tests/desafio2_test.py`
+`user@user-Lenovo-ideapad-330-15IKB:~/desafio-capgemini$ python3 -m pytest tests/desafio2_test.py`
 **Teste desafio 3**
-user@user-Lenovo-ideapad-330-15IKB:~/desafio-capgemini$ `python3 -m pytest tests/desafio3_test.py`
+`user@user-Lenovo-ideapad-330-15IKB:~/desafio-capgemini$ python3 -m pytest tests/desafio3_test.py`
 
