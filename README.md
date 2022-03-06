@@ -1,109 +1,151 @@
-DESAFIO DE PROGRAMAÇÃO 02 - ACADEMIA CAPGEMINI
+# DESAFIO DE PROGRAMAÇÃO - ACADEMIA CAPGEMINI
 
-Olá! Seja bem-vindo (a) à terceira etapa do processo de seleção para a Academia Capgemini 2022. O objetivo dessa etapa é testar os seus conhecimentos em lógica de programação. Para isso, preparamos três questões com diferentes níveis de dificuldade. A implementação das questões pode ser feita em qualquer linguagem, porém a utilização de Java será um diferencial.
+## Atividades desenvolvidas:
 
-Obs: Se você já realizou o primeiro desafio, não é necessário a resolução desse segundo desafio. Iremos levar em consideração a resolução do primeiro desafio.
+ - [ ] Requisito 1 - A mediana de uma lista de números é basicamente o elemento que se encontra no meio da lista após a ordenação. Dada uma lista de números com um número ímpar de elementos, desenvolva um algoritmo que encontre a mediana.
+   
+	Exemplo:
 
-# Questão 01
+	  Entrada:
+    
+    arr = [9, 2, 1, 4, 6]
+    
+    Saída:
+    
+    4
 
-A mediana de uma lista de números é basicamente o elemento que se encontra no meio da lista após a ordenação. Dada uma lista de números com um número ímpar de elementos, desenvolva um algoritmo que encontre a mediana.
+ - [ ] Requisito 2 - Dado um vetor de inteiros n e um inteiro qualquer x. Construa um algoritmo que determine o número de elementos pares do vetor que tem uma diferença igual ao valor de x.
 
-Exemplo:
+	Exemplo:
 
-Entrada:
+	Entrada:
 
-arr = [9, 2, 1, 4, 6]
+	n = [1, 5, 3, 4, 2]
 
+	Saída:
 
-Saída:
+	3
 
-4
+	Explicação:
 
-# Questão 02
+	Existem 3 pares de inteiros no vetor com uma diferença de 2: [5, 3], [4, 2] e [3, 1].
+	
+ - [ ] Requisito 3 -   Um texto precisa ser encriptado usando o seguinte esquema. Primeiro, os espaços são removidos do 		texto. Então, os caracteres são escritos em um grid, no qual as linhas e colunas tem as seguintes regras:
 
-        Dado um vetor de inteiros n e um inteiro qualquer x. Construa um algoritmo que determine o número de elementos pares do vetor que tem uma diferença igual ao valor de x.
+	![](https://www.google.com/chart?cht=tx&chf=bg,s,FFFFFF00&chco=000000&chl=%5Csqrt%7BT%7D)<=linha<=coluna<=![](https://www.google.com/chart?cht=tx&chf=bg,s,FFFFFF00&chco=000000&chl=%5Csqrt%7BT%7D)
+   
+   -   Considere T, como o tamanho do texto.
+   -   Se certifique de que linhas x colunas >=  ![](https://www.google.com/chart?cht=tx&chf=bg,s,FFFFFF00&chco=000000&chl=T).
+   -   Se múltiplos grids satisfazem as condições, escolha aquele com a menor área.
+       Escreva um algoritmo que ao receber uma string s, mostre a mensagem    encriptada de acordo com as regras descritas.
 
-Exemplo:
+	Exemplos:
 
-Entrada:
+	Exemplo 1)
 
-n = [1, 5, 3, 4, 2]
+    Entrada:
+    
+    s = tenha um bom dia
+    
+    Saída:
+    
+    taoa eum nmd hbi
 
+	Explicação:
 
-Saída:
+	Depois de remover os espaços, a string tem 13 caracteres. 	![](https://www.google.com/chart?cht=tx&chf=bg,s,FFFFFF00&chco=000000&chl=%5Csqrt%7B13%7D) está entre 3 e 4, então a string é rescrita na forma de um grid com 4 linhas e 4 colunas:
 
-3
+    tenh  
+    aumb  
+    omdi  
+    a
 
+	O resultado é obtido ao mostrar os caracteres de cada coluna, com um espaço entre as colunas de texto. A mensagem encriptada é obtida ao mostrar os caracteres de cada linha com um espaço entre as colunas.
 
-Explicação:
+	Exemplo 2)
 
-Existem 3 pares de inteiros no vetor com uma diferença de 2: [5, 3], [4, 2] e [3, 1].
+	Entrada:
 
-# Questão 03
+    s = ola mundo
+    
+    Saída:
+    
+    omd luo an
 
-Um texto precisa ser encriptado usando o seguinte esquema. Primeiro, os espaços são removidos do texto. Então, os caracteres são escritos em um grid, no qual as linhas e colunas tem as seguintes regras:
+	Explicação:
 
-<=linha<=coluna<=
+	Depois de remover os espaços a string tem 8 caracteres. ![](https://www.google.com/chart?cht=tx&chf=bg,s,FFFFFF00&chco=000000&chl=%5Csqrt%7B8%7D) está entre 2 e 3, então a string é reescrita na forma de um grid com 3 linhas e 3 colunas:
 
-Considere T, como o tamanho do texto.
-Se certifique de que linhas x colunas >= .
-Se múltiplos grids satisfazem as condições, escolha aquele com a menor área.
-Escreva um algoritmo que ao receber uma string s, mostre a mensagem encriptada de acordo com as regras descritas.
+    ola
+    
+    mun
+    
+    do
 
-Exemplos:
+## Clonando o projeto  
+  
+Abra o terminal de sua máquina
 
+> Caso queira use um dos atalhos abaixo de acordo com o seu sistema
+> operacional
+>  - *Linux*: Ctrl+Alt+T
+>  - *MacOS*: COMMAND + ESPAÇO
+>  - *Windows*: Tecla do Windows + R
 
-Exemplo 1)
+e digite o comando abaixo para clonar o projeto.  
+  
+  
+`git clone git@github.com:leoncomunicador/desafio-capgemini.git`
+   
+  
+  
+### Para acessar o desafio:
 
-Entrada:
+Após o clone digite:  
+  
+  
+`cd desafio-capgemini`
+  
+  
+  
+### Instalando as dependências  
+  
+**IMPORTANTÍSSIMO:** Lembre-se de primeiro  **criar e ativar o ambiente virtual**, além de também instalar as dependências do projeto. Isso pode ser feito através dos comandos:
 
-s = tenha um bom dia
+    $ python3 -m venv .venv
+    
+    $ source .venv/bin/activate
+    
+    $ python3 -m pip install -r dev-requirements.txt
 
+O arquivo  `requirements.txt`  contém todos as dependências que serão utilizadas no desafio.
+  
+  
+### Executando o desafio  
+  
+  Acesse a pasta challenges, como no exemplo:
 
-Saída:
+     user@user-Lenovo-ideapad-330-15IKB:~/desafio-capgemini$ cd challenges/
 
-taoa eum nmd hbi
+Para executar os desafios basta rodar diratamente no terminal  o comando:
 
+    $ python3 desafio1.py
+    $ python3 desafio2.py
+    $ python3 desafio3.py
+  
+  Os códigos podem ser visualizados em qualquer Editor de Texto, como por exemplo o VSCode.
+ 
+  ### Executando os testes 
 
-Explicação:
+# Importante:
+Antes de rodar os testes execute o comando:
+pip install more-itertools (necessário para garantir que vai rodar o teste 3)
 
-Depois de remover os espaços, a string tem 13 caracteres.  está entre 3 e 4, então a string é rescrita na forma de um grid com 4 linhas e 4 colunas:
-
-tenh
-aumb
-omdi
-a
-
-        O resultado é obtido ao mostrar os caracteres de cada coluna, com um espaço entre as colunas de texto. A mensagem encriptada é obtida ao mostrar os caracteres de cada linha com um espaço entre as colunas.
-
-
-Exemplo 2)
-
-Entrada:
-
-s = ola mundo
-
-
-Saída:
-
-omd luo an
-
-
-Explicação:
-
-        Depois de remover os espaços a string tem 8 caracteres.  está entre 2 e 3, então a string é reescrita na forma de um grid com 3 linhas e 3 colunas:
-
-ola
-
-mun
-
-do
-
-
-# O que será avaliado
-Documentação
-Estrutura do código
-Atendimento aos requisitos
-Testes unitários
-
+Para rodar os testes , você deve estar na pasta raiz, e executar os arquivos conforme os exemplos abaixo:
+**Teste desfio 1**
+user@user-Lenovo-ideapad-330-15IKB:~/desafio-capgemini$ `python3 -m pytest tests/desafio1_test.py`
+**Teste desafio 2**
+user@user-Lenovo-ideapad-330-15IKB:~/desafio-capgemini$ `python3 -m pytest tests/desafio2_test.py`
+**Teste desafio 3**
+user@user-Lenovo-ideapad-330-15IKB:~/desafio-capgemini$ `python3 -m pytest tests/desafio3_test.py`
 
